@@ -1,4 +1,4 @@
-const News = ({judul, isi, penutup}) => {
+const News = ({judul, isi, penutup, tanggal, gambar}) => {
     return  (
         <>
         <div>
@@ -7,7 +7,9 @@ const News = ({judul, isi, penutup}) => {
                     <li>Judul : {judul}</li>
                     <li>Isi : {isi}</li>
                     <li>Penutup : {penutup}</li>
-                </ul>            
+                    <li>Tanggal : {tanggal}</li>
+                </ul>
+                <img src={gambar} alt="poster_stop_judol" width={100} height={100} />
         </div>
         </>
     )
